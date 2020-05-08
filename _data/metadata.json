@@ -1,15 +1,15 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Dungeon Master Audio",
+  "url": "https://dungeonmasteraudio.com/",
+  "description": "Ancient wizards crafting powerful artifacts beneath the alien sky.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Ancient wizards crafting powerful artifacts beneath the alien sky.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://dungeonmasteraudio.com/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Alec Reimel",
+    "email": "dungeonmasteraudio@gmail.com"
   }
 }

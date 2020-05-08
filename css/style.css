@@ -1,0 +1,139 @@
+/********************************************
+
+NOTES
+	- 	This is the primary CSS file.  All code pertaining specifically to
+		this project should live in here.
+
+	RESOURCES
+		-	https://loremipsum.io/
+		- 	https://codepen.io/
+		- 	https://cdnjs.com/
+
+	HELP
+		- 	https://caniuse.com/
+		- 	https://css-tricks.com/
+
+	MISC. NOTES
+		- 	.clearfix - clearfix interferes with flexbox code, 
+			as the :after is treated as a normal child element.
+			Do not clearfix on a flex element
+
+	  
+
+********************************************/
+
+/********************************************
+
+GENERAL
+
+********************************************/
+	
+
+	/***** Box-Size Reset - global border-box *****/
+	  
+	  html {
+	    box-sizing: border-box;
+	  }
+	  *, *:before, *:after {
+	    box-sizing: inherit;
+	  }
+
+	/***** Global *****/
+
+	  html, body{
+	    padding:0;
+	    margin:0;
+	    box-sizing:border-box;
+	    
+	  }
+
+	  html {
+	    /*scroll-behavior: smooth;*/
+	    font-size: 10px;
+	  }
+
+	  body{
+	    overflow-x:hidden;
+	    height:100%;
+		font-size:1.6rem;
+		letter-spacing: 0.0625em;
+	  }
+
+	  ::selection {
+	    background: rgba(251,51,51,.85); /* WebKit/Blink Browsers */
+	    mix-blend-mode: multiply;
+	  }
+	  ::-moz-selection {
+	    background: rgba(251,51,51,.85); /* Gecko Browsers */
+	    mix-blend-mode: multiply;
+	  }
+
+	  .clearfix:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	  }
+
+
+
+	  a{
+	    cursor: pointer;
+	  }
+
+	  img{
+	    max-width:100%;
+	  }
+	  
+	  input[type="submit"]{
+	    cursor: pointer;
+	    border: none;
+	    -webkit-appearance: none;
+	  }
+
+
+	  /***** Mobile Flex Direction *****/
+
+	    @media all and (max-width: 1000px) {
+	      [mobile-flex]>*{
+	        width: 100% !important;
+	      }
+	      [mobile-flex="column"]{
+	        flex-direction: column !important;
+	      }
+	      [mobile-flex="column-reverse"]{
+	        flex-direction: column-reverse !important;
+	      }
+	    }
+
+
+
+
+/********************************************
+
+HOME
+
+********************************************/
+	
+	/*****  HERO / SLIDER  *****/
+
+
+
+
+	/*****  PRODUCT GRID  *****/
+		.product_grid{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.product_grid-cell{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 33.333%;
+			padding: 35px;
+
+		}
