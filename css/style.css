@@ -57,15 +57,15 @@ GENERAL
 	    height:100%;
 		font-size:1.6rem;
 		letter-spacing: 0.0625em;
+
+		background-color: var(--white);
 	  }
 
 	  ::selection {
-	    background: rgba(251,51,51,.85); /* WebKit/Blink Browsers */
-	    mix-blend-mode: multiply;
+	   
 	  }
 	  ::-moz-selection {
-	    background: rgba(251,51,51,.85); /* Gecko Browsers */
-	    mix-blend-mode: multiply;
+	    
 	  }
 
 	  .clearfix:after {
@@ -105,6 +105,13 @@ GENERAL
 	      }
 	    }
 
+	   /***** Container *****/
+	   	.container{
+	   		width: 100%;
+	   		max-width: 1250px;
+	   		margin: auto;
+	   	}
+
 
 
 
@@ -135,5 +142,14 @@ HOME
 
 			width: 33.333%;
 			padding: 35px;
+		}
 
+		.product_grid-cell-inner{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 15px;
+
+			box-shadow: var(--shadow-1);
 		}
