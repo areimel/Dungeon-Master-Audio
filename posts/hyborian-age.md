@@ -1,6 +1,6 @@
 ---
 title: Hyborian Age Fuzz
-description: This is a post on My Blog about agile frameworks.
+description: Hyborian Age
 image: /img/pedals/placeholder-1.png
 date: 2020-05-01
 tags:
