@@ -12,7 +12,17 @@ eleventyNavigation:
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 -->
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+
+<section>
+	{% set postslist = collections.pedal %}
+	{% include "postslist.njk" %}
+</section>
+
+<h2>Merch</h2>
+<section>
+	{% set postslist = collections.merch %}
+	{% include "postslist.njk" %}
+</section>
+
 
 <!--<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>-->

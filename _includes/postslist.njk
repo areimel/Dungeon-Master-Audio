@@ -2,19 +2,19 @@
 
 {% for post in postslist | reverse %}
  
- <li class="product_grid-cell">
+ <section class="product_grid-cell">
     
     <div class="product_grid-cell-inner">
-    	<img src="{{ post.data.image }}">
-    	<a href="{{ post.url | url }}" class="title">{{ post.data.title }}</a>
+    	<img class="image" src="{{ post.data.image }}" alt="">
+    	<a class="title" href="{{ post.url | url }}" >
+    		<h2>{{ post.data.title }}</h2>
+    	</a>
     	<p class="blurb">{{ post.data.blurb }}</p>
 
     	<a href="{{ post.url | url }}" class="cta">INFO</a>
     </div>
-
     
-    
-  </li>
+  </section>
   
 {% endfor %}
 

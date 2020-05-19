@@ -1,9 +1,14 @@
 ---
 title: RBMK Soviet Fuzz
-description: This is a post on My Blog about leveraging agile frameworks.
-date: 2018-07-04
+date: 2020-05-02
+
+image: /img/pedals/placeholder-2.png
+blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
 tags:
-  - number-2
+  - fuzz
+  - pedal
+
 layout: layouts/post.njk
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

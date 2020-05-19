@@ -55,10 +55,11 @@ GENERAL
 	  body{
 	    overflow-x:hidden;
 	    height:100%;
+	    font-family: 'typewriter', 'Courier New', serif;
 		font-size:1.6rem;
 		letter-spacing: 0.0625em;
-
 		background-color: var(--white);
+		color: var(--black);
 	  }
 
 	  ::selection {
@@ -78,6 +79,8 @@ GENERAL
 
 	  a{
 	    cursor: pointer;
+	    color: inherit;
+	    text-decoration: none;
 	  }
 
 	  img{
@@ -144,12 +147,38 @@ HOME
 			padding: 35px;
 		}
 
-		.product_grid-cell-inner{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding: 15px;
+		/*****  PRODUCT CELLS  *****/
+			.product_grid-cell-inner{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 15px;
+				box-shadow: var(--shadow-1);
+			}
 
-			box-shadow: var(--shadow-1);
-		}
+			.product_grid-cell-inner>.image{
+				height: 300px;
+				width: auto;
+			}
+
+			.product_grid-cell-inner>.title{
+				font-size: 2.4rem;
+				margin-bottom: 15px;
+			}
+
+			.product_grid-cell-inner>.blurb{
+				margin-bottom: 15px;
+				height: 100px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.product_grid-cell-inner>.cta{
+				background-color: var(--black);
+				color: var(--white);
+				padding: 5px 15px;
+				font-size: 1.8rem;
+			}

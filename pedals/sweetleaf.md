@@ -1,10 +1,16 @@
 ---
 title: Sweet Leaf Overdrive
-description: This is a post on My Blog about win-win survival strategies.
-date: 2018-08-24
+date: 2020-04-20
+
+image: /img/pedals/placeholder-1.png
+blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
 tags:
-  - second-tag
+  - fuzz
+  - pedal
+
 layout: layouts/post.njk
+
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

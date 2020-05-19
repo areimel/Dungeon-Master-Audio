@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Pedals
+  order: 2
+---
+
+<h1>Pedals</h1>
+
+<section>
+  {% set postslist = collections.pedal %}
+  {% include "postslist.njk" %}
+</section>

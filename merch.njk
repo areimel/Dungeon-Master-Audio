@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Merch
+  order: 3
+---
+
+<h1>Merch</h1>
+
+<section>
+  {% set postslist = collections.merch %}
+  {% include "postslist.njk" %}
+</section>
