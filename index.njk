@@ -5,21 +5,16 @@ eleventyNavigation:
   order: 1
 ---
 
-<h1>Product Line</h1>
 
-<!-- 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
--->
-
-<section>
+<section class="--dma_home_1 container ">
+	<h1 class="heading">Product Line</h1>
 	{% set postslist = collections.pedal %}
 	{% include "postslist.njk" %}
 </section>
 
-<h2>Merch</h2>
-<section>
+
+<section class="--dma_home_1 container">
+	<h2 class="heading">Merch</h2>
 	{% set postslist = collections.merch %}
 	{% include "postslist.njk" %}
 </section>

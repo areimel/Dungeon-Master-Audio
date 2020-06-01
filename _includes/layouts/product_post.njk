@@ -11,7 +11,9 @@ templateClass: tmpl-post
 	<div class="--dma_product_post_1_1">
 		<!-- Heading -->
 		<div class="heading">
-			<h1>{{ title }}</h1>
+			<div class="inner">
+				<h1>{{ title }}</h1>
+			</div>
 		</div>
 
 		<!-- 50/50 layout -->
@@ -25,13 +27,13 @@ templateClass: tmpl-post
 					<!-- Swiper Wrapper -->
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="/img/pedals/placeholder-1.png">
+							<img src="{{ image_1 }}">
 						</div>
 						<div class="swiper-slide">
-							<img src="/img/pedals/placeholder-2.png">
+							<img src="{{ image_2 }}">
 						</div>
 						<div class="swiper-slide">
-							<img src="/img/pedals/placeholder-3.png">
+							<img src="{{ image_3 }}">
 						</div>
 					</div>
 					
@@ -49,15 +51,15 @@ templateClass: tmpl-post
 				<div class="swiper-container product_slider_thumbs">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="/img/pedals/placeholder-1.png">
+							<img src="{{ image_1 }}">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="/img/pedals/placeholder-2.png">
+							<img src="{{ image_2 }}">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="/img/pedals/placeholder-3.png">
+							<img src="{{ image_3 }}">
 						</div>
 						
 					</div>
@@ -71,7 +73,9 @@ templateClass: tmpl-post
 					
 					<h2 class="heading">Info</h2>
 
-					{{ content | safe }}
+					<div class="copy">
+						{{ content | safe }}
+					</div>
 					
 				</div>
 			</div>

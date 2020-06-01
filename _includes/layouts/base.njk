@@ -23,20 +23,30 @@
 
   <body>
     
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    <div class="--dma_bg"></div>
 
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
+    <header class="--dma_header">
+      <div class="container">
+        
+        <h1 class="logo home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+
+        {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+        <ul class="links">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
+        </ul>
+
+      </div>
     </header>
+    
+
 
     <div class="content_wrapper">
-      {{ content | safe }}
+        {{ content | safe }}
     </div>
+
+
 
     <footer></footer>
 
@@ -44,6 +54,8 @@
 
     <!-- EXTERNAL JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js" integrity="sha256-xKd8O6CvawXs3b8ZCrfuwN9A0ISCM8bUhJC86L6A8OY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha256-GaKOLXTn7uJXFuWp57ukQZGuKK2gWZWlEH16hc6jBU8=" crossorigin="anonymous"></script>
 
     <!-- INTERNAL JS -->
     <script src="{{ '/js/script.js' | url }}"></script>

@@ -1,17 +1,20 @@
-<ul class="product_grid container">
+<ul class="--dma_product_grid">
 
 {% for post in postslist | reverse %}
  
  <section class="product_grid-cell">
     
     <div class="product_grid-cell-inner">
-    	<img class="image" src="{{ post.data.image }}" alt="">
+    	<a href="{{ post.url | url }}">
+    		<img class="image" src="{{ post.data.image_1 }}" alt="">
+    	</a>
+    	
     	<a class="title" href="{{ post.url | url }}" >
     		<h2>{{ post.data.title }}</h2>
     	</a>
     	<p class="blurb">{{ post.data.blurb }}</p>
 
-    	<a href="{{ post.url | url }}" class="cta">INFO</a>
+    	<a href="{{ post.url | url }}" class="link texture_cardboard_black ">INFO</a>
     </div>
     
   </section>

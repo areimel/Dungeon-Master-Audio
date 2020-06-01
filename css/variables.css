@@ -54,4 +54,12 @@ FONTS / TYPOGRAPHY
 	  src: url('/css/fonts/nasalization-rg.ttf'); 
 	}
 
-	
+	/***** PRESET FONT SIZE *****/
+	:root{
+		--font_heading_1: 5.5rem;
+		--font_heading_2: 3.5rem;
+		--font_heading_3: 2.4rem;
+
+		--font_body_1: 1.8rem;
+		--font_body_2: 2.4rem;
+	}

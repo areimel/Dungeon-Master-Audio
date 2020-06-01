@@ -19,6 +19,17 @@ $(window).on("load", function() {
 	}
 });
 
+/********************************************
+
+PAGE BACKGROUND HANDLER
+	-	Grabs height of page on load, then sets
+		background element to 100% height;
+	
+********************************************/
+$(window).on("load", function() {
+	var page_height = $('html').height();
+	$('.--dma_bg').css('height',page_height);
+});
 
 
 /********************************************
@@ -417,3 +428,40 @@ $(document).ready(function(){
 
 
 
+
+
+/********************************************
+
+SLIDERS
+
+********************************************/
+$(document).ready(function(){
+
+//Product Slider
+	if($('.product_slider').length){
+		
+		console.log('Product Slider active');
+		var product_slider_thumbs = new Swiper('.product_slider_thumbs', {
+			slidesPerView: 3,
+			loopedSlides: 3, //looped slides should be the same
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			observeParents: true,
+		});
+		var product_slider = new Swiper('.product_slider', {
+			loop: true,
+			roundLengths: true,
+			spaceBetween: 35,
+			loopedSlides: 3, //looped slides should be the same
+			navigation: {
+				nextEl: '.product_slider .swiper-button-next',
+				prevEl: '.product_slider .swiper-button-prev',
+			},
+			thumbs: {
+				swiper: product_slider_thumbs,
+			},
+		});
+	}
+
+
+});

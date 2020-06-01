@@ -92,28 +92,118 @@ GENERAL
 	    border: none;
 	    -webkit-appearance: none;
 	  }
+	
+
+	/***** Container *****/
+		.container{
+			width: 100%;
+			max-width: 1250px;
+			margin: auto;
+		}
 
 
-	  /***** Mobile Flex Direction *****/
 
-	    @media all and (max-width: 1000px) {
-	      [mobile-flex]>*{
-	        width: 100% !important;
-	      }
-	      [mobile-flex="column"]{
-	        flex-direction: column !important;
-	      }
-	      [mobile-flex="column-reverse"]{
-	        flex-direction: column-reverse !important;
-	      }
-	    }
+/********************************************
 
-	   /***** Container *****/
-	   	.container{
-	   		width: 100%;
-	   		max-width: 1250px;
-	   		margin: auto;
-	   	}
+GENERAL - ADVANCED
+
+********************************************/
+	/***** Mobile Flex Direction *****/
+		@media all and (max-width: 1000px) {
+			[mobile-flex]>*{
+				width: 100% !important;
+			}
+			[mobile-flex="column"]{
+				flex-direction: column !important;
+			}
+			[mobile-flex="column-reverse"]{
+				flex-direction: column-reverse !important;
+			}
+		}
+
+	/***** CUSTOM UL *****/
+		.--ul_icon{
+			list-style: none;
+		}
+		.--ul_icon>li{
+			margin-bottom: 5px;
+		}
+		.--ul_icon>li:before{
+			content: '>';
+			padding-right: 10px;
+		}
+
+	
+
+
+/********************************************
+
+BODY WRAPPERS
+
+********************************************/
+	/***** BACKGROUND *****/
+		
+		.--dma_bg{
+			content:'';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			pointer-events: none;
+			background-color: #f9f9f9;
+			background-image: url("/img/textures/lined-paper-2.png");
+		}
+
+		.content_wrapper{
+			z-index: 10;
+			padding-top: 15px;
+		}
+
+
+/********************************************
+
+HEADER / NAV
+
+********************************************/
+
+	.--dma_header{
+		padding: 35px 0;
+	}
+	.--dma_header>.container{
+		/*max-width: 1650px;*/
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	/***** Logo / Name *****/
+		.--dma_header>.container>.logo{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-right: 50px;
+			font-size: 2.4rem;
+		}
+		.--dma_header>.container>.logo:hover{
+			text-decoration: underline;
+		}
+
+	/***** Links *****/
+		.--dma_header>.container>.links{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.--dma_header>.container>.links li{
+			margin:0px 10px;
+		}
+		.--dma_header>.container>.links a:hover{
+			text-decoration: underline;
+		}
 
 
 
@@ -124,13 +214,19 @@ HOME
 
 ********************************************/
 	
-	/*****  HERO / SLIDER  *****/
+	/***** HERO / SLIDER *****/
 
 
+	/***** Home 1 *****/
+		.--dma_home_1{
+			margin-bottom: 75px;
+		}
+		.--dma_home_1 .heading{
+			font-size: 3.5rem;
+		}
 
-
-	/*****  PRODUCT GRID  *****/
-		.product_grid{
+	/***** PRODUCT GRID *****/
+		.--dma_product_grid{
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -147,27 +243,30 @@ HOME
 			padding: 35px;
 		}
 
-		/*****  PRODUCT CELLS  *****/
+		/***** PRODUCT CELLS *****/
 			.product_grid-cell-inner{
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				padding: 15px;
+				background-color: var(--white);
 				box-shadow: var(--shadow-1);
+				transition: .25s ease-in-out;
 			}
+			
 
-			.product_grid-cell-inner>.image{
+			.product_grid-cell-inner .image{
 				height: 300px;
 				width: auto;
 			}
 
-			.product_grid-cell-inner>.title{
+			.product_grid-cell-inner .title{
 				font-size: 2.4rem;
 				margin-bottom: 15px;
 			}
 
-			.product_grid-cell-inner>.blurb{
+			.product_grid-cell-inner .blurb{
 				margin-bottom: 15px;
 				height: 100px;
 				display: flex;
@@ -176,9 +275,231 @@ HOME
 				justify-content: center;
 			}
 
-			.product_grid-cell-inner>.cta{
+			.product_grid-cell-inner .link{
 				background-color: var(--black);
 				color: var(--white);
 				padding: 5px 15px;
-				font-size: 1.8rem;
+				font-size: 2.4rem;
 			}
+			.product_grid-cell-inner .link:hover{
+				text-decoration: underline;
+			}
+
+
+/********************************************
+
+Product Page
+
+********************************************/
+	/***** Breadcrumb *****/
+		.--dma_product_post_1 .breadcrumb{
+			margin-bottom: 25px;
+		}
+		.--dma_product_post_1 .breadcrumb i{
+			margin: 0 15px;
+		}
+		.--dma_product_post_1 .breadcrumb i:first-of-type{
+			margin-left: 0;
+		}
+
+		/***** Heading *****/
+			.--dma_product_post_1_1>.heading{
+				text-align: center;
+			}
+			.--dma_product_post_1_1>.heading>.inner{
+				background-color: var(--black);
+				font-size: var(--font_heading_1);
+				display: inline-block;
+				padding: 15px 25px;
+				transform: rotate(-1.1deg);
+			}
+			.--dma_product_post_1_1>.heading h1{
+				color: var(--white);
+				transform: rotate(1.2deg);
+			}
+		/***** Slider & Info *****/
+			.--dma_product_post_1_1>.layout{
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.--dma_product_post_1_1>.layout>.slider{
+				width: 50%;
+			}
+			.--dma_product_post_1_1>.layout>.info{
+				width: 50%;
+			}
+
+			/***** Slider *****/
+				.--dma_product_post_1_1>.layout>.slider{
+					padding: 50px;
+				}
+				/***** Slide Content *****/
+					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-slide{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-slide img{
+						width: 100%;
+						max-width: 420px;					
+					}
+
+				/***** Arrows *****/
+					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-button-next, 
+					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-button-prev{
+						background-image: none;
+						font-size: 5.5rem;
+						color: var(--black);
+					}
+					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-button-next:after, 
+					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-button-prev:after{
+						content: '';
+					}
+
+				/***** Thumbs *****/
+					.product_slider_thumbs{
+						width: 100%;
+						max-width: 420px;
+						margin: auto;
+					}
+					.product_slider_thumbs .swiper-wrapper{
+						align-items: center;
+					}
+					.product_slider_thumbs .swiper-slide{
+						mix-blend-mode: multiply;
+						opacity: 50%;
+						transition: .25s ease-in-out;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100%;
+					}
+					.product_slider_thumbs .swiper-slide img{
+						height: auto;
+						width: 100px;
+					}
+					.product_slider_thumbs .swiper-slide-thumb-active{
+						opacity: 100%;
+					}
+				
+			/***** Info *****/
+				.--dma_product_post_1_1>.layout>.info{
+					padding: 50px;
+				}
+				
+				.--dma_product_post_1_1>.layout>.info>.info_1{
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-start;
+				}
+
+				.--dma_product_post_1_1>.layout>.info>.info_1 .heading{
+					font-size: var(--font_heading_2);
+					width: 100%;
+					padding-bottom: 0px;
+					border-bottom: 2px solid; 
+					margin-bottom: 15px;
+				}
+
+				.--dma_product_post_1_1>.layout>.info>.info_1 .copy{
+					font-size: var(--font_body_1);
+				}
+				.--dma_product_post_1_1>.layout>.info>.info_1 .copy .subhead{
+					font-size: var(--font_heading_3);
+					margin-bottom: 5px;
+				}
+				.--dma_product_post_1_1>.layout>.info>.info_1 .copy ul{
+
+				}
+
+/********************************************
+
+SPECIAL FX 
+--search-fx
+
+********************************************/
+  /***** PAPER TEXTURE OVERLAY *****/
+    .texture_paper_white{
+      position: relative;
+      background-color: var(--white);
+      overflow: hidden;
+    }
+    .texture_paper_black{
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+    }
+
+    [class*="texture_paper_"]:after {
+      content:'';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      pointer-events: none;
+      background-image: url('/img/textures/natural-paper.png');
+      background-repeat: repeat;
+      mix-blend-mode: lighten;
+      background-size: 10%;
+    }
+
+  /***** CARDBOARD TEXTURE OVERLAY *****/
+    .texture_cardboard_white{
+      position: relative;
+      background-color: var(--white);
+      overflow: hidden;
+    }
+    .texture_cardboard_black{
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+    }
+
+    [class*="texture_cardboard_"]:after {
+      content:'';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      pointer-events: none;
+      background-image: url('/img/textures/cardboard.png');
+      background-repeat: repeat;
+      mix-blend-mode: lighten;
+    }
+
+  /***** DUST TEXTURE OVERLAY *****/
+    .texture_dust_white{
+      position: relative;
+      background-color: var(--white);
+      overflow: hidden;
+    }
+    .texture_dust_black{
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+    }
+
+    [class*="texture_dust_"]:after {
+      content:'';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      pointer-events: none;
+      background-image: url('/img/textures/green-dust-and-scratches.png');
+      background-repeat: repeat;
+      mix-blend-mode: lighten;
+      background-size: 100%;
+    }
+    
+  
