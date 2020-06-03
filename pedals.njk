@@ -5,9 +5,18 @@ eleventyNavigation:
   order: 2
 ---
 
-<h1>Pedals</h1>
+
 
 <section>
-  {% set postslist = collections.pedal %}
-  {% include "postslist.njk" %}
+	<div class="container">
+		
+		<!-- Breadcrumb -->
+		<div class="breadcrumb">
+			<a href="{{ '/' | url }}">Home</a> < <span class="current">Pedals</span>
+		</div>
+
+		<h1>Pedals</h1>
+		{% set postslist = collections.pedal %}
+  		{% include "postslist.njk" %}
+	</div>
 </section>

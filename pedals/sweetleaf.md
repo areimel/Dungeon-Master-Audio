@@ -18,7 +18,7 @@ layout: layouts/product_post.njk
 <br>
 <p class="subhead">Controls</p>
 <ul class="--ul_icon">
-	<li>Vol:		Post-Amp Gain</li>
-	<li>Drive: 		Preamp Gain</li>
-	<li>Treble: 	EQ</li>
+	<li><span>Vol:</span>		Post-Amp Gain</li>
+	<li><span>Drive:</span> 	Preamp Gain</li>
+	<li><span>Treble:</span> 	EQ</li>
 </ul>

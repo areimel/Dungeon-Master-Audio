@@ -18,8 +18,8 @@ layout: layouts/product_post.njk
 <br>
 <p class="subhead">Controls</p>
 <ul class="--ul_icon">
-	<li>Vol:		Post-Amp Gain</li>
-	<li>Fuzz: 		Preamp Gain</li>
-	<li>Filter: 	Tone Sweep</li>
-	<li>Safety: 	Filter Bypass</li>
+	<li><span>Vol:</span>		Post-Amp Gain</li>
+	<li><span>Fuzz:</span> 		Preamp Gain</li>
+	<li><span>Filter:</span> 	Tone Sweep</li>
+	<li><span>Safety:</span> 	Filter Bypass</li>
 </ul>

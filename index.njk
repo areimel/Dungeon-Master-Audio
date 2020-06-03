@@ -7,14 +7,23 @@ eleventyNavigation:
 
 
 <section class="--dma_home_1 container ">
-	<h1 class="heading">Product Line</h1>
+	<div class="heading">
+		<div class="inner">
+			<h1>Pedals</h1>
+		</div>
+	</div>
 	{% set postslist = collections.pedal %}
 	{% include "postslist.njk" %}
 </section>
 
 
 <section class="--dma_home_1 container">
-	<h2 class="heading">Merch</h2>
+	
+	<div class="heading">
+		<div class="inner">
+			<h2 class="heading">Merch</h2>
+		</div>
+	</div>
 	{% set postslist = collections.merch %}
 	{% include "postslist.njk" %}
 </section>

@@ -205,6 +205,32 @@ HEADER / NAV
 			text-decoration: underline;
 		}
 
+/********************************************
+
+GLOBAL ELEMENTS
+
+********************************************/
+
+/***** Breadcrumb *****/
+	.breadcrumb{
+		margin-bottom: 25px;
+		font-size: 1.4rem;
+	}
+	.breadcrumb i{
+		margin: 0 15px;
+	}
+	.breadcrumb i:first-of-type{
+		margin-left: 0;
+	}
+	.breadcrumb a:hover{
+		text-decoration: underline;
+	}
+	.breadcrumb .current{
+		font-weight: 600;
+	}
+
+
+
 
 
 
@@ -221,9 +247,23 @@ HOME
 		.--dma_home_1{
 			margin-bottom: 75px;
 		}
-		.--dma_home_1 .heading{
-			font-size: 3.5rem;
-		}
+		
+		/***** Heading *****/
+			.--dma_home_1>.heading{
+				text-align: center;
+				font-size: 3.5rem;
+			}
+			.--dma_home_1>.heading>.inner{
+				background-color: var(--black);
+				font-size: var(--font_heading_1);
+				display: inline-block;
+				padding: 15px 25px;
+				transform: rotate(-1.1deg);
+			}
+			.--dma_home_1>.heading>.inner>* {
+				color: var(--white);
+				transform: rotate(1.2deg);
+			}
 
 	/***** PRODUCT GRID *****/
 		.--dma_product_grid{
@@ -259,6 +299,8 @@ HOME
 			.product_grid-cell-inner .image{
 				height: 300px;
 				width: auto;
+				padding: 0 15px;
+				margin-bottom: 15px;
 			}
 
 			.product_grid-cell-inner .title{
@@ -269,6 +311,7 @@ HOME
 			.product_grid-cell-inner .blurb{
 				margin-bottom: 15px;
 				height: 100px;
+				padding: 0px 15px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -291,20 +334,12 @@ HOME
 Product Page
 
 ********************************************/
-	/***** Breadcrumb *****/
-		.--dma_product_post_1 .breadcrumb{
-			margin-bottom: 25px;
-		}
-		.--dma_product_post_1 .breadcrumb i{
-			margin: 0 15px;
-		}
-		.--dma_product_post_1 .breadcrumb i:first-of-type{
-			margin-left: 0;
-		}
+
 
 		/***** Heading *****/
 			.--dma_product_post_1_1>.heading{
 				text-align: center;
+				margin: 35px 0px;
 			}
 			.--dma_product_post_1_1>.heading>.inner{
 				background-color: var(--black);
@@ -363,7 +398,7 @@ Product Page
 					.product_slider_thumbs{
 						width: 100%;
 						max-width: 420px;
-						margin: auto;
+						margin: 35px auto 0px;
 					}
 					.product_slider_thumbs .swiper-wrapper{
 						align-items: center;
@@ -376,6 +411,7 @@ Product Page
 						align-items: center;
 						justify-content: center;
 						height: 100%;
+
 					}
 					.product_slider_thumbs .swiper-slide img{
 						height: auto;
@@ -396,25 +432,50 @@ Product Page
 					align-items: flex-start;
 					justify-content: flex-start;
 				}
+				
+				/***** Heading *****/
+					.--dma_product_post_1_1>.layout>.info>.info_1 .heading{
+						font-size: var(--font_heading_2);
+						width: 100%;
+						padding-bottom: 0px;
+						border-bottom: 2px solid; 
+						margin-bottom: 15px;
+					}
+				
+				/***** Copy/Content *****/
+					.--dma_product_post_1_1>.layout>.info>.info_1 .copy{
+						font-size: var(--font_body_1);
+						margin-bottom: 35px;
+					}
+					.--dma_product_post_1_1>.layout>.info>.info_1 .copy .subhead{
+						font-size: var(--font_heading_3);
+						margin-bottom: 5px;
+					}
+					.--dma_product_post_1_1>.layout>.info>.info_1 .copy ul span{
+						width: 100px;
+						display: inline-block;
+					}
 
-				.--dma_product_post_1_1>.layout>.info>.info_1 .heading{
-					font-size: var(--font_heading_2);
-					width: 100%;
-					padding-bottom: 0px;
-					border-bottom: 2px solid; 
-					margin-bottom: 15px;
-				}
-
-				.--dma_product_post_1_1>.layout>.info>.info_1 .copy{
-					font-size: var(--font_body_1);
-				}
-				.--dma_product_post_1_1>.layout>.info>.info_1 .copy .subhead{
-					font-size: var(--font_heading_3);
-					margin-bottom: 5px;
-				}
-				.--dma_product_post_1_1>.layout>.info>.info_1 .copy ul{
-
-				}
+				/***** Buy Link *****/
+					.--dma_product_post_1_1>.layout>.info>.info_1 .buy_link{
+						font-size: var(--font_body_1);
+						margin-bottom: 35px;
+					}
+					.--dma_product_post_1_1>.layout>.info>.info_1 .buy_link .button{
+						background-color: var(--black);
+						font-size: var(--font_heading_3);
+						display: inline-block;
+						padding: 15px 25px;
+						transform: rotate(-1.1deg);
+					}
+					
+					.--dma_product_post_1_1>.layout>.info>.info_1 .buy_link .button>span{
+						color: var(--white);
+						transform: rotate(1.2deg);
+					}
+					.--dma_product_post_1_1>.layout>.info>.info_1 .buy_link .button:hover>span{
+						text-decoration: underline;
+					}
 
 /********************************************
 

@@ -5,7 +5,7 @@ templateClass: tmpl-post
 <article class="container --dma_product_post_1">
 	<!-- Breadcrumb -->
 	<div class="breadcrumb">
-		<a href="{{ '/' | url }}">< Home</a>
+		<a href="{{ '/' | url }}">Home</a> < <a href="{{ '/pedals' | url }}">Pedals</a> < <span class="current">{{ title }}</span>
 	</div>
 
 	<div class="--dma_product_post_1_1">
@@ -75,6 +75,12 @@ templateClass: tmpl-post
 
 					<div class="copy">
 						{{ content | safe }}
+					</div>
+
+					<div class="buy_link">
+						<a class="button" href="#">
+							<span>Buy on Reverb</span>
+						</a>
 					</div>
 					
 				</div>
