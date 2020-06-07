@@ -5,9 +5,16 @@ eleventyNavigation:
   order: 3
 ---
 
-<h1>Merch</h1>
+<section class="--dma_product_list_1">
+	<div class="container">
+		
+		<!-- Breadcrumb -->
+		<div class="breadcrumb">
+			<a href="{{ '/' | url }}">Home</a> < <span class="current">Merch</span>
+		</div>
 
-<section>
-  {% set postslist = collections.merch %}
-  {% include "postslist.njk" %}
+		<h1>Merch</h1>
+		{% set postslist = collections.merch %}
+  		{% include "postslist.njk" %}
+	</div>
 </section>

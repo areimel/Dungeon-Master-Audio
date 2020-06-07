@@ -4,8 +4,8 @@
  
  <section class="product_grid-cell">
     
-    <div class="product_grid-cell-inner">
-    	<a href="{{ post.url | url }}">
+    <div class="product_grid-cell-inner {{ post.data.status }}">
+    	<a class="img_wrapper" href="{{ post.url | url }}">
     		<img class="image" src="{{ post.data.image_1 }}" alt="">
     	</a>
     	

@@ -1,6 +1,7 @@
 ---
 title: RBMK Soviet Fuzz
 date: 2020-05-02
+status: coming_soon
 tags:
   - fuzz
   - pedal
@@ -9,7 +10,7 @@ image_1: /img/pedals/placeholder-2.png
 image_2: /img/pedals/placeholder-2.png
 image_3: /img/pedals/placeholder-2.png
 
-blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+blurb: "It means the core is open. It means the fire we're watching with our own eyes is giving off nearly twice the radiation released by the bomb in Hiroshima. And that's every single hour."
 
 layout: layouts/product_post.njk
 ---

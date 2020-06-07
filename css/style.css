@@ -58,6 +58,7 @@ GENERAL
 	    font-family: 'typewriter', 'Courier New', serif;
 		font-size:1.6rem;
 		letter-spacing: 0.0625em;
+		line-height: 1.2;
 		background-color: var(--white);
 		color: var(--black);
 	  }
@@ -245,7 +246,7 @@ HOME
 
 	/***** Home 1 *****/
 		.--dma_home_1{
-			margin-bottom: 75px;
+			margin-bottom: 100px;
 		}
 		
 		/***** Heading *****/
@@ -285,6 +286,7 @@ HOME
 
 		/***** PRODUCT CELLS *****/
 			.product_grid-cell-inner{
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -294,28 +296,83 @@ HOME
 				box-shadow: var(--shadow-1);
 				transition: .25s ease-in-out;
 			}
+
+
+			/***** PRODUCT STATUS *****/
+				.product_grid-cell-inner.coming_soon{
+					pointer-events: none;
+				}
+				.product_grid-cell-inner.coming_soon:after{
+					content: 'COMING SOON';
+					position: absolute;
+					left: 50%;
+					top: 25%;
+					width: 120%;
+					transform: translate3d(-50%, 0, 0) rotate(-25deg);
+					padding: 5px 15px;
+					background-color: var(--black);
+					color:var(--white);
+					font-size: 3.5rem;
+					text-align: center;
+					z-index: 5;
+				}
+
+				.product_grid-cell-inner.out_of_stock{
+					pointer-events: none;
+				}
+				.product_grid-cell-inner.out_of_stock:after{
+					content: 'OUT OF STOCK';
+					position: absolute;
+					left: 50%;
+					top: 25%;
+					width: 120%;
+					transform: translate3d(-50%, 0, 0) rotate(-25deg);
+					padding: 5px 15px;
+					background-color: var(--black);
+					color:var(--white);
+					font-size: 3.5rem;
+					text-align: center;
+					z-index: 5;
+				}
 			
 
-			.product_grid-cell-inner .image{
+			.product_grid-cell-inner .img_wrapper{
 				height: 300px;
-				width: auto;
 				padding: 0 15px;
-				margin-bottom: 15px;
+				margin-bottom: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.product_grid-cell-inner .img_wrapper>.image{
+				max-height: 100%;
+				
+				/*filter: 
+				drop-shadow(0 1px 2.2px rgba(0, 0, 0, 0.056))
+				drop-shadow(0 2.3px 5.3px rgba(0, 0, 0, 0.081))
+				drop-shadow(0 4.4px 10px rgba(0, 0, 0, 0.1))
+				drop-shadow(0 7.8px 17.9px rgba(0, 0, 0, 0.119))
+				drop-shadow(0 14.6px 33.4px rgba(0, 0, 0, 0.144))
+				drop-shadow(0 35px 80px rgba(0, 0, 0, 0.2));
+				*/
 			}
 
 			.product_grid-cell-inner .title{
 				font-size: 2.4rem;
+				padding-bottom: 5px;
 				margin-bottom: 15px;
+				border-bottom: 2px solid var(--black);
 			}
 
 			.product_grid-cell-inner .blurb{
 				margin-bottom: 15px;
-				height: 100px;
+				height: 150px;
+				line-height: 1.2;
 				padding: 0px 15px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				justify-content: center;
+				justify-content: flex-start;
 			}
 
 			.product_grid-cell-inner .link{
