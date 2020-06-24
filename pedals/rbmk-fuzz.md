@@ -1,7 +1,7 @@
 ---
 title: RBMK Soviet Fuzz
 date: 2020-05-02
-status: coming_soon
+status: planning_build
 tags:
   - fuzz
   - pedal
@@ -13,6 +13,8 @@ image_3: /img/pedals/placeholder-2.png
 blurb: "It means the core is open. It means the fire we're watching with our own eyes is giving off nearly twice the radiation released by the bomb in Hiroshima. And that's every single hour."
 
 layout: layouts/product_post.njk
+
+product_link: 
 ---
 
 <p>Based on the classic Sovtek Big Muff, the RBMK Soviet Fuzz delivers the 90s stoner fuzz sound you've been looking for. Throw on a B-grade horror movie, grab some cheap beer and pizza, and get ready to melt some faces.</p>

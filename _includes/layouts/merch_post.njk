@@ -1,0 +1,76 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+
+
+product_link: 
+---
+<article class="container --dma_product_post_1">
+	<!-- Breadcrumb -->
+	<div class="breadcrumb">
+		<a href="{{ '/' | url }}">Home</a> < <a href="{{ '/pedals' | url }}">Pedals</a> < <span class="current">{{ title }}</span>
+	</div>
+
+	<div class="--dma_product_post_1_1">
+		<!-- Heading -->
+		<div class="heading">
+			<div class="inner">
+				<h1>{{ title }}</h1>
+			</div>
+		</div>
+
+		<!-- 50/50 layout -->
+		<div class="layout">
+			
+			<!-- Slider -->
+			<div class="slider">
+				
+				<!-- Swiper -->
+				<div class="swiper-container product_slider">
+					<!-- Swiper Wrapper -->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="{{ image_1 }}">
+						</div>
+						<div class="swiper-slide">
+							<img src="{{ image_2 }}">
+						</div>
+						<div class="swiper-slide">
+							<img src="{{ image_3 }}">
+						</div>
+					</div>
+
+				</div>
+				
+				
+
+
+			</div>
+
+			<!-- Pedal Info -->
+			<div class="info">
+				<div class="info_1">
+					
+					<h2 class="heading">Merch Info</h2>
+
+					<div class="copy">
+						{{ content | safe }}
+					</div>
+
+					<div class="buy_link">
+						<a class="button" href="#">
+							<span>Buy on Etsy</span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	
+	
+
+</article>

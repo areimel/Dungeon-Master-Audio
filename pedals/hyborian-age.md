@@ -1,6 +1,6 @@
 ---
 title: Hyborian Age Fuzz
-date: 2020-05-01
+date: 2020-05-05
 status: out_of_stock
 tags:
   - fuzz

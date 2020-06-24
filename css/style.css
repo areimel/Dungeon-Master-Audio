@@ -299,41 +299,89 @@ HOME
 
 
 			/***** PRODUCT STATUS *****/
-				.product_grid-cell-inner.coming_soon{
-					pointer-events: none;
-				}
-				.product_grid-cell-inner.coming_soon:after{
-					content: 'COMING SOON';
-					position: absolute;
-					left: 50%;
-					top: 25%;
-					width: 120%;
-					transform: translate3d(-50%, 0, 0) rotate(-25deg);
-					padding: 5px 15px;
-					background-color: var(--black);
-					color:var(--white);
-					font-size: 3.5rem;
-					text-align: center;
-					z-index: 5;
-				}
 
-				.product_grid-cell-inner.out_of_stock{
-					pointer-events: none;
-				}
-				.product_grid-cell-inner.out_of_stock:after{
-					content: 'OUT OF STOCK';
-					position: absolute;
-					left: 50%;
-					top: 25%;
-					width: 120%;
-					transform: translate3d(-50%, 0, 0) rotate(-25deg);
-					padding: 5px 15px;
-					background-color: var(--black);
-					color:var(--white);
-					font-size: 3.5rem;
-					text-align: center;
-					z-index: 5;
-				}
+				/***** Coming Soon *****/
+					.product_grid-cell-inner.coming_soon{
+						
+					}
+					.product_grid-cell-inner.coming_soon:before{
+						content: '';
+						position: absolute;
+						z-index: 4;
+					}
+					.product_grid-cell-inner.coming_soon:after{
+						content: 'COMING SOON';
+						position: absolute;
+						left: 50%;
+						top: 25%;
+						width: calc(100% + 65px);
+						transform: translate3d(-50%, 0, 0) rotate(-25deg);
+						padding: 5px 15px;
+						background-color: var(--black);
+						color:var(--white);
+						font-size: 3.5rem;
+						text-align: center;
+						z-index: 5;
+					}
+
+
+				/***** Planning Build *****/
+					.product_grid-cell-inner.planning_build{
+						pointer-events: none;
+
+					}
+					.product_grid-cell-inner.planning_build:before{
+						content: '';
+						position: absolute;
+						height: 100%;
+						width: 100%;
+						background-color: #333;
+						opacity: .75;
+						z-index: 4;
+					}
+					.product_grid-cell-inner.planning_build:after{
+						content: 'PLANNING BUILD';
+						position: absolute;
+						left: 50%;
+						top: 25%;
+						width: calc(100% + 65px);
+						transform: translate3d(-50%, 0, 0) rotate(-25deg);
+						padding: 5px 15px;
+						background-color: var(--black);
+						color:var(--white);
+						font-size: 3.5rem;
+						text-align: center;
+						z-index: 5;
+					}
+
+					.product_grid-cell-inner.planning_build .img_wrapper{
+						opacity: 0;
+					}
+				/***** Out of Stock *****/
+					.product_grid-cell-inner.out_of_stock{
+						
+					}
+					.product_grid-cell-inner.out_of_stock:before{
+						content: '';
+						position: absolute;
+						height: 100%;
+						width: 100%;
+						z-index: 4;
+					}
+					.product_grid-cell-inner.out_of_stock:after{
+						content: 'OUT OF STOCK';
+						position: absolute;
+						left: 50%;
+						top: 25%;
+						width: calc(100% + 65px);
+						transform: translate3d(-50%, 0, 0) rotate(-25deg);
+						padding: 5px 15px;
+						background-color: var(--black);
+						color:var(--white);
+						font-size: 3.5rem;
+						text-align: center;
+						z-index: 5;
+					}
 			
 
 			.product_grid-cell-inner .img_wrapper{
