@@ -1,0 +1,35 @@
+
+/********************************************
+
+NOTES
+
+	- Media Query example:  
+		@media only screen and (max-width: 600px){}
+
+	- Container Size: 1250px
+
+********************************************/
+
+/********************************************
+
+HOME
+
+********************************************/
+
+	/********************************************
+	Product Grid
+	********************************************/
+
+	@media only screen and (max-width: 1250px){
+		.--dma_product_grid{
+			flex-direction: column;
+		}
+		.product_grid-cell{
+			width: 100%;
+			max-width: 400px;
+		}
+
+		.product_grid-cell-inner.planning_build .img_wrapper{
+			display: none;
+		}
+	}

@@ -1,21 +1,9 @@
 ---
-title: RBMK Soviet Fuzz
-date: 2020-05-02
-status: planning_build
-tags:
-  - fuzz
-  - pedal
-
-image_1: /img/pedals/placeholder-2.png
-image_2: /img/pedals/placeholder-2.png
-image_3: /img/pedals/placeholder-2.png
-
-blurb: ""
-
-layout: layouts/product_post.njk
-
-product_link: 
+layout: layouts/base.njk
+templateClass: tmpl-post
 ---
+
+
 <article class="container --dma_product_post_1">
 	<!-- Breadcrumb -->
 	<div class="breadcrumb">
@@ -43,12 +31,12 @@ product_link:
 						<div class="swiper-slide">
 							<img src="{{ image_1 }}">
 						</div>
-						<div class="swiper-slide">
+						<!--<div class="swiper-slide">
 							<img src="{{ image_2 }}">
 						</div>
 						<div class="swiper-slide">
 							<img src="{{ image_3 }}">
-						</div>
+						</div>-->
 					</div>
 
 				</div>
@@ -69,8 +57,8 @@ product_link:
 					</div>
 
 					<div class="buy_link">
-						<a class="button" href="#">
-							<span>Buy on Etsy</span>
+						<a class="button" href="{{ sale_url }}" target="_blank" >
+							<span>Buy on {{ sale_type }}</span>
 						</a>
 					</div>
 					

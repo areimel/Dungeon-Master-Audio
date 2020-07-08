@@ -1,17 +1,21 @@
 ---
 title: Logo T-Shirt
-date: 2020-04-02
-
-image_1: /img/pedals/placeholder-1.png
-image_2: /img/pedals/placeholder-1.png
-image_3: /img/pedals/placeholder-1.png
-
-blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-
+date: 2020-05-05
+status: 
 tags:
   - merch
 
-layout: layouts/post.njk
+image_1: "/img/merch/dma-logo-shirt-2.png"
+image_2: ""
+image_3: ""
 
+blurb: ""
+
+sale_type: "RedBubble"
+sale_url: "https://www.redbubble.com/i/t-shirt/Dungeon-Master-Audio-Logo-by-NecroCultZine/51797270.FB110"
+
+layout: layouts/merch_post.njk
 ---
-
+<p>Basic logo tee - choose your color and shirt type on RedBubble.com.</p>
+<br/>
+<p>Sales from this shirt will go directly towards: a new printer for making pedal graphics.</p>

@@ -16,6 +16,7 @@
     <!-- INTERNAL CSS -->
       <link rel="stylesheet" href="{{ '/css/variables.css' | url }}">
       <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+      <link rel="stylesheet" href="{{ '/css/responsive.css' | url }}">
     
   </head>
 
@@ -23,7 +24,7 @@
 
   <body>
     
-    <div class="--dma_bg"></div>
+    <!--<div class="--dma_bg"></div>-->
 
     <header class="--dma_header">
       <div class="container">
@@ -48,28 +49,68 @@
 
 
 
-    <footer>
-      <div class="container">
+    <footer class="--dma_footer">
+      
+      <div class="upper container">
+    
+        <div class="form">
+          <p class="title">Newsletter Sign-Up</p>
+          <form class="--dma_form_basic" action="https://formspree.io/mqkyydrn" method="POST">
+            <!--<label for="--dma_footer_form_email" class="">
+              <span>Email</span>
+            </label>-->
+            <input id="--dma_footer_form_email" type="email" name="email">
+            <input class="button" type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+
+      </div>
+
+
+      <div class="lower container">
         
         <div class="links">
-          
+          <p class="title">Other sites in our network:</p>
+          <ul class="--ul_icon">
+            <li>
+              <a href="https://www.judasbeastco.com/?utm_source=dungeon_master_audio">Judas Beast</a> - Heavy Metal apparel for humans and pets
+            </li>
+
+            <li>
+              <a href="https://necro-cult.com/?utm_source=dungeon_master_audio">Necro Cult Zine</a> - Underground metal news &amp; culture
+            </li>
+
+            <li>
+              <a href="https://alecreimel.com/?utm_source=dungeon_master_audio">Alec Reimel</a> - Web Dev &amp; Graphic Design
+            </li>
+          </ul>
         </div>
 
         <div class="legal">
-          
+          <p class="title">Legal:</p>
+          <ul class="--ul_icon">
+            <li>
+              <span>&copy;2020 Dungeon Master Audio</span>
+            </li>
+
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
         </div>
+
       </div>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
 
     <!-- EXTERNAL JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js" integrity="sha256-xKd8O6CvawXs3b8ZCrfuwN9A0ISCM8bUhJC86L6A8OY=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha256-GaKOLXTn7uJXFuWp57ukQZGuKK2gWZWlEH16hc6jBU8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js" integrity="sha256-xKd8O6CvawXs3b8ZCrfuwN9A0ISCM8bUhJC86L6A8OY=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha256-GaKOLXTn7uJXFuWp57ukQZGuKK2gWZWlEH16hc6jBU8=" crossorigin="anonymous"></script>
 
     <!-- INTERNAL JS -->
-    <script src="{{ '/js/script.js' | url }}"></script>
+      <script src="{{ '/js/script.js' | url }}"></script>
 
 
   </body>

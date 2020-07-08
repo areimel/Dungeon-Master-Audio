@@ -2,7 +2,7 @@
 
 {% for post in postslist | reverse %}
  
- <section class="product_grid-cell">
+ <li class="product_grid-cell">
     
     <div class="product_grid-cell-inner {{ post.data.status }}">
     	<a class="img_wrapper" href="{{ post.url | url }}">
@@ -17,7 +17,7 @@
     	<a href="{{ post.url | url }}" class="link texture_cardboard_black ">INFO</a>
     </div>
     
-  </section>
+  </li>
   
 {% endfor %}
 

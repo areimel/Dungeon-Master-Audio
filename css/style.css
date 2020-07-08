@@ -88,11 +88,17 @@ GENERAL
 	    max-width:100%;
 	  }
 	  
-	  input[type="submit"]{
-	    cursor: pointer;
-	    border: none;
-	    -webkit-appearance: none;
-	  }
+	/***** Basic Form styling *****/
+		input{
+			font-family: 'typewriter', 'Courier New', serif;
+		}
+		input[type="submit"]{
+			cursor: pointer;
+			border: none;
+			-webkit-appearance: none;
+		}
+		
+		
 	
 
 	/***** Container *****/
@@ -100,6 +106,7 @@ GENERAL
 			width: 100%;
 			max-width: 1250px;
 			margin: auto;
+			padding: 0 35px;
 		}
 
 
@@ -155,11 +162,18 @@ BODY WRAPPERS
 			pointer-events: none;
 			background-color: #f9f9f9;
 			background-image: url("/img/textures/lined-paper-2.png");
+
+			display: none;
 		}
 
 		.content_wrapper{
 			z-index: 10;
 			padding-top: 15px;
+		}
+
+		body{
+			background-image: url("/img/textures/lined-paper-2.png");
+			background-position: center top;
 		}
 
 
@@ -206,6 +220,64 @@ HEADER / NAV
 			text-decoration: underline;
 		}
 
+
+
+/********************************************
+
+FOOTER
+
+********************************************/
+
+	.--dma_footer{
+		margin-top: 100px;
+		padding: 50px 0;
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	/***** Upper *****/
+		.--dma_footer .upper{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.--dma_footer .upper>.form{
+			display: inline-block;
+		}
+		.--dma_footer .upper>.form .title{
+			font-size: 2.4rem;
+			margin-bottom: 5px;
+		}
+
+
+	/***** Lower *****/
+		.--dma_footer .lower{
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+			border-top: solid 2px;
+			margin-top: 35px;
+			padding-top: 35px;
+			font-size: 1.8rem;
+		}
+		.--dma_footer .lower a:hover{
+			text-decoration: underline;
+		}
+		.--dma_footer .lower .title{
+			font-size: 2.4rem;
+			margin-bottom: 5px;
+		}
+
+		.--dma_footer .lower>.links{
+			width: calc(100% - 350px);
+		}
+		.--dma_footer .lower>.legal{
+			width: 350px;
+		}
+
 /********************************************
 
 GLOBAL ELEMENTS
@@ -232,7 +304,37 @@ GLOBAL ELEMENTS
 
 
 
+/********************************************
 
+FORMS
+
+********************************************/
+
+/***** Basic Form - just email *****/
+	.--dma_form_basic{
+		display: flex;
+		align-items: stretch;
+
+	}
+	.--dma_form_basic input{
+		background: transparent;
+		height: 100%;
+		border: 2px solid var(--white);
+
+		padding: 5px 15px;
+		font-size: 2.4rem;
+		border-radius: 0px;
+	}
+
+	.--dma_form_basic .button{
+		background-color: var(--black);
+		color: var(--white);
+		display: inline-block;
+		border-left: none;
+	}
+	.--dma_form_basic .button:hover{
+		text-decoration: underline;
+	}
 
 
 /********************************************
@@ -273,6 +375,7 @@ HOME
 			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
+			list-style: none;
 		}
 
 		.product_grid-cell{

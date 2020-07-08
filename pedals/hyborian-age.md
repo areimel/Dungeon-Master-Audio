@@ -1,7 +1,7 @@
 ---
 title: Hyborian Age Fuzz
 date: 2020-05-05
-status: out_of_stock
+status: coming_soon
 tags:
   - fuzz
   - pedal
@@ -12,10 +12,13 @@ image_3: /img/pedals/hyborian-age-1.png
 
 blurb: "Conan, what is best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women."
 
+sale_type: "Reverb"
+sale_url: "#placeholder"
+
 layout: layouts/product_post.njk
 ---
 
-<p>Hailing from the lineage of Vox, Shin-Ei, and Boss, the Hyborian Age is an intense, old school fuzz with a naturally occurring octave up.  With a monstrous amount of gain on tap and an intense 2-band EQ, this fuzz is ideal for both frying your speakers through a clean amp, or pushing your favorite tube head into meltdown.  If you’re checking this out, then you know exactly what you’re looking for, and this is it.</p>
+<p>Hailing from the lineage of Vox, Shin-Ei, and Boss, the Hyborian Age is an intense, old school fuzz with a naturally occurring octave up.  With a monstrous amount of gain on tap and an intense 2-band EQ, this fuzz is ideal for both frying your speakers through a clean amp, or pushing your favorite tube head into meltdown.</p>
 <br>
 <p class="subhead">Controls</p>
 <ul class="--ul_icon">

@@ -2,9 +2,9 @@
 title: Tolex Lighters
 date: 2020-04-01
 
-image_1: /img/pedals/placeholder-1.png
-image_2: /img/pedals/placeholder-1.png
-image_3: /img/pedals/placeholder-1.png
+image_1: "/img/merch/tolex-lighter-1.png"
+image_2: ""
+image_3: ""
 
 blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 
