@@ -1,6 +1,6 @@
 ---
-title: Hyborian Age Stoner Fuzz
-date: 2020-05-05
+title: Mission Control Patch Bay
+date: 2020-05-04
 status: coming_soon
 tags:
   - fuzz
