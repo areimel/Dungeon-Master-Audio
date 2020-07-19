@@ -7,6 +7,15 @@
       <title>{{ renderData.title or title or metadata.title }}</title>
       <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
       <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+
+    <!-- ANALYTICS -->
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5M4RHTJ');</script>
+      <!-- End Google Tag Manager -->
     
     <!-- EXTERNAL CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
@@ -23,13 +32,18 @@
 
 
   <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M4RHTJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     
     <!--<div class="--dma_bg"></div>-->
 
     <header class="--dma_header texture_cardboard_black">
       <div class="container">
         
-        <h1 class="logo home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+        <h1 class="logo home"><a href="{{ '/' | url }}" data-event="GAEvent" data-category="Nav" data-label="Home-Logo" data-action="Click" data-value="">{{ metadata.title }}</a></h1>
 
         {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
         <ul class="links">

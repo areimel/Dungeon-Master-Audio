@@ -451,7 +451,7 @@ $(document).ready(function(){
 		var product_slider = new Swiper('.product_slider', {
 			loop: true,
 			roundLengths: true,
-			spaceBetween: 35,
+			spaceBetween: 65,
 			loopedSlides: 3, //looped slides should be the same
 			navigation: {
 				nextEl: '.product_slider .swiper-button-next',

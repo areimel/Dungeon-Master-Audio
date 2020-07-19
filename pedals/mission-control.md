@@ -1,7 +1,7 @@
 ---
 title: Mission Control Patch Bay
 date: 2020-05-04
-status: coming_soon
+status: out_of_stock
 tags:
   - fuzz
   - pedal

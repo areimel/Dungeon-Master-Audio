@@ -37,32 +37,61 @@ FONTS / TYPOGRAPHY
 ********************************************/
 
 	/***** TYPEWRITER FONT *****/
-	@font-face {
-	  font-family: 'typewriter';
-	  src: url('/css/fonts/MyUnderwood.ttf'); 
-	}
+		@font-face {
+		  font-family: 'typewriter';
+		  src: url('/css/fonts/MyUnderwood.ttf'); 
+		}
+
+	/***** LABEL FONT *****/
+		@font-face {
+		  font-family: 'label';
+		  src: url('/css/fonts/ImpactLabel.ttf'); 
+		}
+		@font-face {
+		  font-family: 'label-reverse';
+		  src: url('/css/fonts/ImpactLabelReversed.ttf'); 
+		}
+
 
 	/***** COMPUTER FONT *****/
-	@font-face {
-	  font-family: 'computerfont';
-	  src: url('/css/fonts/Computerfont.ttf'); 
-	}
+		@font-face {
+		  font-family: 'computerfont';
+		  src: url('/css/fonts/Computerfont.ttf'); 
+		}
 
 	/***** NASA FONT *****/
-	@font-face {
-	  font-family: 'nasa';
-	  src: url('/css/fonts/nasalization-rg.ttf'); 
-	}
+		@font-face {
+		  font-family: 'nasa';
+		  src: url('/css/fonts/nasalization-rg.ttf'); 
+		}
+
+	/***** FONT VARS *****/
+		:root{
+			--typewriter: 'typewriter';
+
+			--label: 'label';
+			--label-r: 'label-reverse';
+
+			--computerfont: 'computerfont';
+			--nasa: 'nasa';
+		}
+
 
 	/***** PRESET FONT SIZE *****/
-	:root{
-		--font_heading_1: 5.5rem;
-		--font_heading_2: 3.5rem;
-		--font_heading_3: 2.4rem;
+		:root{
+			--font_heading_1: 5.5rem;
+			--font_heading_2: 3.5rem;
+			--font_heading_3: 2.4rem;
 
-		--font_body_1: 1.8rem;
-		--font_body_2: 2.4rem;
+			--font_body_1: 1.8rem;
+			--font_body_2: 2.4rem;
 
-		--font_small_1: 1rem;
-		--font_small_2: 1.2rem;
-	}
+			--font_small_1: 1rem;
+			--font_small_2: 1.2rem;
+		}
+
+
+	/***** TRANSITION TIMINGS *****/
+		:root{
+			--transition_basic: .25s ease-in-out;
+		}

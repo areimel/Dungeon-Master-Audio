@@ -86,6 +86,7 @@ GENERAL
 
 	  img{
 	    max-width:100%;
+	    height: auto;
 	  }
 	  
 	/***** Basic Form styling *****/
@@ -272,10 +273,18 @@ search: --footer;
 			margin-bottom: 10px;
 		}
 		.--dma_footer .lower a{
-			padding-bottom: 0px;
+			padding:3px 3px 0px;
 			border-bottom: solid 2px ;
 			display: inline-block;
+			
 		}
+		.--dma_footer .lower a:hover{
+			color: var(--black);
+			background-color: var(--white);
+
+		}
+
+
 		.--dma_footer .lower .title{
 			font-size: 2.4rem;
 			margin-bottom: 5px;
@@ -369,6 +378,7 @@ HOME
 			.--dma_home_1>.heading>.inner{
 				background-color: var(--black);
 				font-size: var(--font_heading_1);
+				font-family: var(--label-r);
 				display: inline-block;
 				padding: 15px 25px;
 				transform: rotate(-1.1deg);
@@ -425,6 +435,7 @@ HOME
 					}
 					.product_grid-cell-inner.coming_soon:after{
 						content: 'COMING SOON';
+						font-family: 'label-reverse';
 						position: absolute;
 						left: 50%;
 						top: 25%;
@@ -455,6 +466,7 @@ HOME
 					}
 					.product_grid-cell-inner.planning_build:after{
 						content: 'PLANNING BUILD';
+						font-family: 'label-reverse';
 						position: absolute;
 						left: 50%;
 						top: 25%;
@@ -475,15 +487,16 @@ HOME
 					.product_grid-cell-inner.out_of_stock{
 						
 					}
-					.product_grid-cell-inner.out_of_stock:before{
+					/*.product_grid-cell-inner.out_of_stock:before{
 						content: '';
 						position: absolute;
 						height: 100%;
 						width: 100%;
 						z-index: 4;
-					}
+					}*/
 					.product_grid-cell-inner.out_of_stock:after{
 						content: 'OUT OF STOCK';
+						font-family: 'label-reverse';
 						position: absolute;
 						left: 50%;
 						top: 25%;
@@ -546,8 +559,9 @@ HOME
 			.product_grid-cell-inner .link{
 				background-color: var(--black);
 				color: var(--white);
+				font-family: var(--label-r);
 				padding: 5px 15px;
-				font-size: 2.4rem;
+				font-size: 3.6rem;
 			}
 			.product_grid-cell-inner .link:hover{
 				text-decoration: underline;
@@ -569,6 +583,7 @@ Product Page
 			.--dma_product_post_1_1>.heading>.inner{
 				background-color: var(--black);
 				font-size: var(--font_heading_1);
+				font-family: var(--label-r);
 				display: inline-block;
 				padding: 15px 25px;
 				transform: rotate(-1.1deg);
@@ -586,18 +601,21 @@ Product Page
 				flex-wrap: wrap;
 			}
 			.--dma_product_post_1_1>.layout>.slider{
-				width: 50%;
+				width: 600px;
 			}
 			.--dma_product_post_1_1>.layout>.info{
-				width: 50%;
+				width: calc(100% - 600px);
 			}
 
 			/***** Slider *****/
 				.--dma_product_post_1_1>.layout>.slider{
 					padding: 50px;
 				}
+				.--dma_product_post_1_1>.layout>.slider .swiper-wrapper{
+					
+				}
 				.--dma_product_post_1_1>.layout>.slider .product_slider{
-
+					padding: 0 50px;
 				}
 				/***** Slide Content *****/
 					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-slide{
@@ -607,8 +625,8 @@ Product Page
 						
 					}
 					.--dma_product_post_1_1>.layout>.slider .product_slider .swiper-slide img{
-						width: auto;
-						height: 400px;
+						/*width: auto;
+						height: 400px;*/
 						/*max-width: 200px;*/
 						
 					}
@@ -696,6 +714,7 @@ Product Page
 					.--dma_product_post_1_1>.layout>.info>.info_1 .buy_link .button{
 						background-color: var(--black);
 						font-size: var(--font_heading_3);
+						font-family: var(--label-r);
 						display: inline-block;
 						padding: 15px 25px;
 						transform: rotate(-1.1deg);
