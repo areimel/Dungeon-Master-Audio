@@ -3,14 +3,14 @@ title: Mission Control Patch Bay
 date: 2020-05-04
 status: out_of_stock
 tags:
-  - fuzz
+  - patchbay
   - pedal
 
 image_1: /img/pedals/hyborian-age-1.png
 image_2: /img/pedals/hyborian-age-1.png
 image_3: /img/pedals/hyborian-age-1.png
 
-blurb: "Conan, what is best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women."
+blurb: "I have no intention of leaving her, Doctor. I will take the Lewis and Clark to a safe distance and then I'll launch TAC missiles at the Event Horizon until I'm satisfied she's vaporized. Fuck this ship!"
 
 sale_type: "Reverb"
 sale_url: "#placeholder"
@@ -18,13 +18,8 @@ sale_url: "#placeholder"
 layout: layouts/product_post.njk
 ---
 
-<p>Hailing from the lineage of Vox, Shin-Ei, and Boss, the Hyborian Age is an intense, old school fuzz with a naturally occurring octave up.  With a monstrous amount of gain on tap and an intense 2-band EQ, this fuzz is ideal for both frying your speakers through a clean amp, or pushing your favorite tube head into meltdown.</p>
+<p>The Mission Control Patch Bay allows you to take full control over your pedalboard's routing and layout. Connnect each pedal to a patch, then route them into each other in whatever way you want using the synth-style 1/8in patch cables, without having to move the pedals themselves.</p>
 <br>
-<p class="subhead">Controls</p>
-<ul class="--ul_icon">
-	<li><span>Vol:</span> 		Post-Amp Gain</li>
-	<li><span>Indica:</span> 	Bass</li>
-	<li><span>Sativa:</span> 	Treble</li>
-	<li><span>Gain:</span> 		Preamp Gain</li>
-	<li><span>Sorcery:</span> 	Fuzz Mode</li>
-</ul>
+<p>The Mission Control is fully passive - no power required. This simple, straightforward tool is the perfect centerpiece for your pedalboard in the studio, the practice space, or even a music shop display. Set up your perfect layout once, and then leave it as-is while trying different positions for your reverb and delay, your wah, or even swapping pedals in and out of your amp's FX loop.</p>
+<br>
+<p>Custom graphics, labels, and layouts are available upon request. </p>
