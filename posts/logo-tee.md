@@ -5,7 +5,7 @@ status:
 tags:
   - merch
 
-image_1: "/img/merch/dma-logo-shirt-1.png"
+image_1: "/img/merch/dma-logo-shirt-v2-trans.png"
 image_2: "/img/merch/dma-logo-shirt-2.png"
 image_3: ""
 
