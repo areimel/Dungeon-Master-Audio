@@ -10,7 +10,7 @@ image_1: /img/pedals/placeholder-3.png
 image_2: /img/pedals/placeholder-3.png
 image_3: /img/pedals/placeholder-3.png
 
-blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+blurb: 'An old school overdrive for old school heavy metal. Praise Iommi.'
 
 layout: layouts/product_post.njk
 ---

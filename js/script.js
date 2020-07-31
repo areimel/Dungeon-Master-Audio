@@ -289,6 +289,9 @@ $(document).ready(function(){
 
 });
 
+
+
+
 /********************************************
 
 LINK FORMATTERS
@@ -345,6 +348,9 @@ LINK FORMATTERS
 	$(document).ready(function(){
 		$('a[target="_blank"]').attr('rel','noopener');
 	});
+
+
+
 
 /********************************************
 

@@ -93,6 +93,10 @@ GENERAL
 		input{
 			font-family: 'typewriter', 'Courier New', serif;
 		}
+		input::placeholder{
+			opacity: 1;
+			color: inherit;
+		}
 		input[type="submit"]{
 			cursor: pointer;
 			border: none;
@@ -339,7 +343,7 @@ FORMS
 		background: transparent;
 		height: 100%;
 		border: 2px solid var(--white);
-
+		color: var(--white);
 		padding: 5px 15px;
 		font-size: 2.4rem;
 		border-radius: 0px;
@@ -546,7 +550,7 @@ HOME
 
 			.product_grid-cell-inner .blurb{
 				margin-bottom: 15px;
-				height: 150px;
+				height: 80px;
 				line-height: 1.2;
 				padding: 0px 15px;
 				display: flex;
@@ -562,9 +566,12 @@ HOME
 				font-family: var(--label-r);
 				padding: 5px 15px;
 				font-size: 3.6rem;
+				transition: .25s ease-in-out;
+				text-align: center;
 			}
 			.product_grid-cell-inner .link:hover{
-				text-decoration: underline;
+				transform: translate3d(0,-5px,0);
+				box-shadow: 0px 3px 15px rgba(0,0,0,.5);
 			}
 
 

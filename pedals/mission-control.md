@@ -10,7 +10,7 @@ image_1: /img/pedals/hyborian-age-1.png
 image_2: /img/pedals/hyborian-age-1.png
 image_3: /img/pedals/hyborian-age-1.png
 
-blurb: "I have no intention of leaving her, Doctor. I will take the Lewis and Clark to a safe distance and then I'll launch TAC missiles at the Event Horizon until I'm satisfied she's vaporized. Fuck this ship!"
+blurb: "Simple, passive, powerful. One of the most useful pedals you can pick up."
 
 sale_type: "Reverb"
 sale_url: "#placeholder"
