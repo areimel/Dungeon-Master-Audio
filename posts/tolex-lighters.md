@@ -9,7 +9,7 @@ image_1: "/img/merch/tolex-lighter-1.png"
 image_2: ""
 image_3: ""
 
-blurb: "Bring the stoner metal vibe to the next smokeout with our custom orange Tolex wrapped lighters."
+blurb: "Bring the doom metal vibe to the next smokeout with our custom orange Tolex wrapped lighters."
 
 sale_type: "Etsy"
 sale_url: "#"
@@ -18,7 +18,7 @@ layout: layouts/merch_post.njk
 
 ---
 
-<p>Bring the stoner metal vibe to the next smokeout with our custom orange Tolex wrapped lighters.</p>
+<p>Bring the doom metal vibe to the next smokeout with our custom orange Tolex wrapped lighters.</p>
 <br/>
 <p>With a soft, yet rugged rubberized grip, and its strikingly iconic color, you'll be sure to raise the eyebrows of your fellow doom-heads.</p>
 <br/>

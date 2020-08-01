@@ -10,7 +10,7 @@ image_1: /img/pedals/hyborian-age-1.png
 image_2: /img/pedals/hyborian-age-1.png
 image_3: /img/pedals/hyborian-age-1.png
 
-blurb: "Get ready to crush your enemies and see them driven before you with this 90s stoner fuzz."
+blurb: "Get ready to crush your enemies and see them driven before you, with this 90s stoner fuzz."
 
 sale_type: "Reverb"
 sale_url: "#placeholder"
